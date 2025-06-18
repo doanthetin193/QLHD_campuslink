@@ -12,7 +12,9 @@ public class HoaDon {
     private LocalDate ngayThanhToan;
     private String phuongThucThanhToan;
 
-    public HoaDon() {}
+    public HoaDon() {
+    	this.ngayThanhToan = LocalDate.now();
+    }
 
     public int getMaHD() {
         return maHD;

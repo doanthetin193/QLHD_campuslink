@@ -20,10 +20,4 @@ public class HoaDonDAOImpl implements HoaDonDAO {
                            hoaDon.getPhuongThucThanhToan());
         return jdbcTemplate.queryForObject("SELECT MAX(MaHD) FROM HOADON", Integer.class);
     }
-
-    @Override
-    public void delete(int maHD) {
-        String sql = "DELETE FROM HOADON WHERE MaHD = ?";
-        jdbcTemplate.update(sql, maHD);
-    }
 }

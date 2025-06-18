@@ -21,16 +21,4 @@ public class ChiTietHoaDonDAOImpl implements ChiTietHoaDonDAO {
             jdbcTemplate.update(sql, chiTiet.getMaHD(), chiTiet.getMaSP(), chiTiet.getSoLuong());
         }
     }
-
-    @Override
-    public void delete(int maHD, int maSP) {
-        String sql = "DELETE FROM CHITIETHOADON WHERE MaHD = ? AND MaSP = ?";
-        jdbcTemplate.update(sql, maHD, maSP);
-    }
-
-    @Override
-    public int countByMaHD(int maHD) {
-        String sql = "SELECT COUNT(*) FROM CHITIETHOADON WHERE MaHD = ?";
-        return jdbcTemplate.queryForObject(sql, Integer.class, maHD);
-    }
 }

@@ -16,9 +16,4 @@ public class HoaDonServiceImpl implements HoaDonService {
     public int save(HoaDon hoaDon) {
         return hoaDonDAO.save(hoaDon);
     }
-
-    @Override
-    public void delete(int maHD) {
-        hoaDonDAO.delete(maHD);
-    }
 }

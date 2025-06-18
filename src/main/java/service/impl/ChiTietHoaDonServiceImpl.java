@@ -18,14 +18,4 @@ public class ChiTietHoaDonServiceImpl implements ChiTietHoaDonService {
     public void save(List<ChiTietHoaDon> chiTietHoaDons) {
         chiTietHoaDonDAO.save(chiTietHoaDons);
     }
-
-    @Override
-    public void delete(int maHD, int maSP) {
-        chiTietHoaDonDAO.delete(maHD, maSP);
-    }
-
-    @Override
-    public int countByMaHD(int maHD) {
-        return chiTietHoaDonDAO.countByMaHD(maHD);
-    }
 }

@@ -1,6 +1,6 @@
 package model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -8,7 +8,7 @@ public class NhanVien {
 	private int maNV;
 	private String tenNV;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private Date ngaySinh;
+	private LocalDate ngaySinh;
 	private String diaChi;
 	
 	public NhanVien() {}
@@ -29,11 +29,11 @@ public class NhanVien {
 		this.tenNV = tenNV;
 	}
 
-	public Date getNgaySinh() {
+	public LocalDate getNgaySinh() {
 		return ngaySinh;
 	}
 
-	public void setNgaySinh(Date ngaySinh) {
+	public void setNgaySinh(LocalDate ngaySinh) {
 		this.ngaySinh = ngaySinh;
 	}
 
